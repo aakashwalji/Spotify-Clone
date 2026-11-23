@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Web Player: Music for everyone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assests/logo.png" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <div class="logo"><img src="./assests/logo.png" alt="" /></div>
+        <div class="home-icon">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="What do you want to play?" />
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-options nav-options-left">
+          <ul>
+            <li>Premium</li>
+            <li>Support</li>
+            <li>Download</li>
+          </ul>
+        </div>
+        <div class="nav-options nav-options-right">
+          <ul>
+            <li><i class="fa-solid fa-circle-down"></i>Install App</li>
+            <li>Signup</li>
+            <li id="log-in">Log in</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <aside>
+        <div class="library-heading">
+          <h4>Your Library</h4>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="library-options">
+          <div class="library-options-box">
+            <h4>Create yout first playlist</h4>
+            <p>It's easy we'll help you</p>
+            <button class="primary-btn">Create Playlist</button>
+          </div>
+          <div class="library-options-box">
+            <h4>Let's find some podcasts to follow</h4>
+            <p>We'll keep you updated on new episodes</p>
+            <button class="primary-btn">Browse podcasts</button>
+          </div>
+        </div>
+        <div class="library-footer">
+          <div class="library-footer-links">
+            <a href="">Legal</a>
+            <a href="">Safety&PrivacyCenter</a>
+            <a href="">PrivacyPolicy</a>
+            <a href="">Cookies</a>
+            <a href="">AboutAds</a>
+            <a href="">Accessibilty</a>
+          </div>
+          <span>Cookies</span>
+          <button id="language-btn">
+            <i class="fa-solid fa-globe"></i>
+            English
+          </button>
+        </div>
+      </aside>
+
+      <!--  Content -->
+
+      <div class="content">
+        <!-- trending songs -->
+        <div class="collection-container">
+          <div class="collection-header">
+            <h2>Trending songs</h2>
+            <span>Show all</span>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/trending/trending-card-1.jpeg" alt="" />
+              <h3 class="card-title">Saiyaara (From "Saiyaara")</h3>
+              <p class="card-info">
+                Tanish Bagchi, Faheem Abdullah, Arslan Nizami
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/trending/trending-card-2.jpeg" alt="" />
+              <h3 class="card-title">Dhun (From "Saiyaara")</h3>
+              <p class="card-info">Mithoon, Arijit Singh</p>
+            </div>
+
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/trending/trending-card-3.jpeg" alt="" />
+              <h3 class="card-title">Tum Ho Toh (From "Saiyaara")</h3>
+              <p class="card-info">
+                Vishal Mishra, Hansika Pareek, Raj Shekhar
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/trending/trending-card-4.jpeg" alt="" />
+              <h3 class="card-title">Barbaad (From "Saiyaara")</h3>
+              <p class="card-info">The Rish, Jubin Nautiyal</p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/trending/trending-card-5.jpeg" alt="" />
+              <h3 class="card-title">Humsafar (From "Saiyaara")</h3>
+              <p class="card-info">Sachet Parampara, Sachet Tandon</p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/trending/trending-card-6.jpeg" alt="" />
+              <h3 class="card-title">Sirra</h3>
+              <p class="card-info">Guru Randhawa, Kiran Bajwa, Rony Ajnali</p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/trending/trending-card-7.jpeg" alt="" />
+              <h3 class="card-title">Powerhouse(From Coolie)(Tamil)</h3>
+              <p class="card-info">Anirudh Ravichander, Arivu</p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/trending/trending-card-8.jpeg" alt="" />
+              <h3 class="card-title">Jhol-Acoustic</h3>
+              <p class="card-info">Maanu, Annural Khalid, Abdullah Siddiqui</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- POPULAR ARTIST -->
+        <div class="collection-container">
+          <div class="collection-header">
+            <h2>Popular artists</h2>
+            <span>Show all</span>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <img
+                src="./assests/artist/popularartist-1-pritam.jpeg"
+                class="artist-img"
+                alt=""
+              />
+              <h3 class="card-title">Pritam</h3>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <img
+                src="./assests/artist/popularartist-2-AR.jpeg"
+                class="artist-img"
+                alt=""
+              />
+              <h3 class="card-title">A.R. Rahman</h3>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <img
+                src="./assests/artist/popularartist-3-arijit.jpeg"
+                class="artist-img"
+                alt=""
+              />
+              <h3 class="card-title">Arijit Singh</h3>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <img
+                src="./assests/artist/popularartist-4-sachinjigar.jpeg"
+                class="artist-img"
+                alt=""
+              />
+              <h3 class="card-title">Sachin-Jigar</h3>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <img
+                src="./assests/artist/popularartist-5-vishal-shekhar.jpeg"
+                class="artist-img"
+                alt=""
+              />
+              <h3 class="card-title">Vishal-Shekhar</h3>
+              <p class="card-info">Artist</p>
+            </div>
+            <div class="card">
+              <img
+                src="./assests/artist/popularartist-6-atif.jpeg"
+                class="artist-img"
+                alt=""
+              />
+              <h3 class="card-title">Atif Aslam</h3>
+              <p class="card-info">Artist</p>
+            </div>
+          </div>
+        </div>
+        <!--Popular Albums and singles-->
+
+        <div class="collection-container">
+          <div class="collection-header">
+            <h2>Popular albums and singles</h2>
+            <span>Show all</span>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/albumsandsingles/card1.jpeg" alt="" />
+              <h3 class="card-title">Aashiqui 2</h3>
+              <p class="card-info">Mithoon, Ankit Tiwari, Jeet Ganguli</p>
+            </div>
+
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/albumsandsingles/card2.jpeg" alt="" />
+              <h3 class="card-title">Yeh Jawani Hai Deewani</h3>
+              <p class="card-info">Pritam</p>
+            </div>
+
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/albumsandsingles/card3.jpeg" alt="" />
+              <h3 class="card-title">Sanam Teri Kasam</h3>
+              <p class="card-info">Himesh Reshammiya, Sameer Anjaan</p>
+            </div>
+
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/albumsandsingles/card4.jpeg" alt="" />
+              <h3 class="card-title">Finding Her</h3>
+              <p class="card-info">Kushagra, Bharath, Saheal</p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/albumsandsingles/card5.jpeg" alt="" />
+              <h3 class="card-title">Young G.O.A.T</h3>
+              <p class="card-info">Cheema Y, Gur Sindhu</p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/albumsandsingles/card6.jpeg" alt="" />
+              <h3 class="card-title">Raanjhan From("Do Patti")</h3>
+              <p class="card-info">Sachet Parampara, Parampara Tandon</p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/albumsandsingles/card7.jpeg" alt="" />
+              <h3 class="card-title">Ultimate Love Songs - Arijit Singh</h3>
+              <p class="card-info">Arijit Singh</p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/albumsandsingles/card-8.jpeg" alt="" />
+              <h3 class="card-title">Making Memories</h3>
+              <p class="card-info">Karan Aujla, Ikky</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Radio -->
+
+        <div class="collection-container">
+          <div class="collection-header">
+            <h2>Popular radio</h2>
+            <span>Show all</span>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/radio/card1.jpeg" alt="" />
+              <h3 class="card-title"></h3>
+              <p class="card-info">
+                With Sachin-Jigar, Jeet Gannguli, Atif Aslam
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/radio/card2.jpeg" alt="" />
+              <h3 class="card-title"></h3>
+              <p class="card-info">
+                With Pritam, Atif Aslam, Mustafa Zahid and more
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/radio/card3.jpeg" alt="" />
+              <h3 class="card-title"></h3>
+              <p class="card-info">
+                With Sonu Nigam, A.R.Rahman, Atif Aslam and more
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/radio/card4.jpeg" alt="" />
+              <h3 class="card-title"></h3>
+              <p class="card-info">
+                With Kumar Sanu, Vinod Rathod, Udit Narayan and more
+              </p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/radio/card5.jpeg" alt="" />
+              <h3 class="card-title"></h3>
+              <p class="card-info">
+                Karan Aujla, AP Dhillon, Siddhu Moosewala and more
+              </p>
+            </div>
+            <div class="card">
+              <div class="play-btn-container">
+                <div class="play-btn">
+                  <div class="play-btn-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+              <img src="./assests/radio/card6.jpeg" alt="" />
+              <h3 class="card-title"></h3>
+              <p class="card-info">
+                With Anirudh Ravichander, G.V. Prakash and more
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+
+        <footer>
+          <div class="footer-col">
+            <h3>Company</h3>
+            <a href="">About</a>
+            <a href="">Jobs</a>
+            <a href="">For the Record</a>
+          </div>
+          <div class="footer-col">
+            <h3>Communities</h3>
+            <a href="">For Artists</a>
+            <a href="">Developers</a>
+            <a href=""> Advertising </a>
+            <a href="">Investors</a>
+            <a href="">Vendors</a>
+          </div>
+          <div class="footer-col">
+            <h3>Useful links</h3>
+            <a href="">Support</a>
+            <a href="">Free Mobile App</a>
+            <a href="">Popular by Country</a>
+          </div>
+          <div class="footer-col">
+            <h3>Spotify Plans</h3>
+            <a href="">Premium Individual</a>
+            <a href="">Premium Duo</a>
+            <a href="">Premium Family</a>
+            <a href="">Premium Student</a>
+            <a href="">Spotify free</a>
+          </div>
+          <!-- <div class="footer-col">
+            <div class="footer-col-icon">
+              <img
+                src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+                alt="instagram-new--v1"
+              />
+            </div>
+            <div class="footer-col-icon"></div>
+            <div class="footer-col-icon">
+              <img
+                src="https://img.icons8.com/ios-filled/50/facebook-new.png"
+                alt="facebook-new"
+              />
+            </div>
+          </div> -->
+        </footer>
+
+        <div class="copyright-div">
+          &copy;2025 Spotify AB
+        </div>
+
+        <!--  -->
+      </div>
+    </main>
+    <!-- preview -->
+    <div class="preview">
+      <h5>Preview of Spotify</h5>
+      <p>
+        Sign up to get unlimited songs and podcasts with occasional ads. No
+        credit card needed.
+      </p>
+      <button class="sign-up">Sign up free</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
